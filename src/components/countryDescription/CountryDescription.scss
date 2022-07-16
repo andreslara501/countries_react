@@ -64,3 +64,17 @@
         }
     }
 }
+
+@media (min-width: 0px) and (max-width: 600px) {
+    #country-description{
+        nav{
+            margin: 10px;
+        }
+        #info{
+            grid-template-columns: 1fr;
+            #data{
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}

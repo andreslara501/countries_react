@@ -5,3 +5,9 @@
     margin: 0 auto var(--global-spacing-filter) auto;
     max-width: var(--global-max-width);
 }
+
+@media (min-width: 0px) and (max-width: 600px) {
+    #filter{
+        grid-template-columns: 1fr;
+    }
+}

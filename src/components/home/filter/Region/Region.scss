@@ -35,3 +35,15 @@
         }
     }
 }
+
+@media (min-width: 0px) and (max-width: 600px) {
+    #region{
+        #select{
+            margin-top: 12px;
+            width: 100%;
+        }
+        #options{
+            width: 100%;
+        }
+    }
+}
