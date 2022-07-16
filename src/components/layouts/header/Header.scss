@@ -14,3 +14,9 @@ header{
         }
     }
 }
+
+@media (min-width: 0px) and (max-width: 600px) {
+    #content{
+        padding: 15px;
+    }
+}
