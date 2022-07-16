@@ -1,4 +1,4 @@
-import { createSlice, PayloadAction, createAsyncThunk } from "@reduxjs/toolkit";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { IState, Country } from "../types/Types";
 import type { RootState } from '../app/store';
 import { getCountries } from './getCompanies.thunk';
@@ -12,6 +12,7 @@ const searchCountry = (region: string, countries: Country[], querySearch: string
                 && (country["region"] === region || region === 'All')
             )
                 return true;
+            return false;
         }
     );
 };

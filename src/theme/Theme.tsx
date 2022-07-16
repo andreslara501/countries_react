@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useAppSelector, useAppDispatch } from "../app/hooks";
-import { selectLoadingState, getCountries, selectTheme } from "../app/countries.slice";
+import { getCountries, selectTheme } from "../app/countries.slice";
 import './dark.css';
 import './light.css';
 
@@ -9,10 +9,9 @@ const Theme = ({ children } : { children:any }) => {
 
     const dispatch = useAppDispatch();
     useEffect(() => {
-        dispatch(getCountries())
+        dispatch(getCountries());
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
-
-    const isLoading = useAppSelector(selectLoadingState);
 
     return (
         <div className={theme}>

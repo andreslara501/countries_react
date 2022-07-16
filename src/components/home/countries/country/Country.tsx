@@ -11,7 +11,7 @@ const Country = (props: { country: CountryType }) => {
 
     const [imageShow, setImageShow] = useState<boolean>(false);
 
-    const { country:country } = props;
+    const { country } = props;
     const selectCountry = (country:CountryType): void => {
         dispatch(setCountrySelected(country));
     }
@@ -23,6 +23,7 @@ const Country = (props: { country: CountryType }) => {
                     src={ country.flag }
                     onLoad={ () => setImageShow(true) }
                     className={ imageShow ? 'loaded' : '' }
+                    alt=""
                 />
                 <div className="info">
                     <h2>{ country.name }</h2>

@@ -1,7 +1,6 @@
-import { useEffect, useState } from "react";
 import { ToggleColors } from "./toggleColors/ToggleColors";
-import { useAppSelector, useAppDispatch } from "../../../app/hooks";
-import { selectLoadingState, getCountries } from "../../../app/countries.slice";
+import { useAppDispatch } from "../../../app/hooks";
+import { getCountries } from "../../../app/countries.slice";
 import './Header.scss';
 
 const Header = () => {

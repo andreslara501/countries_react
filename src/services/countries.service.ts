@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { Country } from '../types/Types';
 
 export const getCountriesAPI = async() => {
     return new Promise<any>(async (resolve, reject) => {

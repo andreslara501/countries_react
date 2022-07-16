@@ -18,12 +18,6 @@ const CountryDescription = () => {
         ) || null;
     };
 
-    const getCountryByAlpha3code = (alpha3code: string): (CountryType | null) => {
-        return countries.find(
-            (country: CountryType) => country.alpha3Code === alpha3code
-        ) || null;
-    };
-
     let country = useAppSelector(selectCountrySelected);
     if (country) {
         isCountryFound = true;
@@ -82,8 +76,6 @@ const CountryDescription = () => {
                             <h3>Border Countries: </h3>
                             {
                                 country?.borders && country?.borders.map((border:string) => {
-                                    const borderText = getCountryByAlpha3code(border) || null
-
                                     return (
                                         <span
                                             className="border-countries"
