@@ -1,0 +1,29 @@
+#search {
+    position: relative;
+}
+    #search input {
+        border: 1px solid var(--global-background-color-elements);
+        background: var(--global-background-color-elements);
+        transition : border 200ms ease-out;
+        padding-left: 38px;
+        width: 100%;
+        box-sizing: border-box;
+
+        padding: 18px 70px;
+        border-radius: var(--global-border-radius-elements);
+        box-shadow: var(--global-box-shadow);
+        font-size: var(--global-font2);
+    }
+        #search input:focus {
+            outline: none;
+            border: 1px solid #5dc6d4;
+            border-radius: 5px;
+        }
+        #search img {
+            transform: rotate(-92deg);
+            position: absolute;
+            width: 21px;
+            top: 18px;
+            left: 27px;
+            opacity: 0.6;
+        }

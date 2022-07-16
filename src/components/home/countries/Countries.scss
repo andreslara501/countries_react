@@ -1,0 +1,8 @@
+#countries{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 56px;
+    grid-row-gap: 58px;
+    margin: 0 auto;
+    max-width: 1000px;
+}

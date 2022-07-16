@@ -1,0 +1,7 @@
+#filter {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: space-between;
+    margin: 0 auto var(--global-spacing-filter) auto;
+    max-width: var(--global-max-width);
+}

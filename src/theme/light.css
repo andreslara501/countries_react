@@ -1,0 +1,21 @@
+.light {
+    height: 100%;
+    background: #fafafa;
+    --global-font-size: 14px;
+    --global-font-color-elements: black;
+    --global-max-width: 1000px;
+    --global-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.07);
+    --global-background-color-elements: white;
+    --global-backgrounds-section-color: #fafafa;
+    --global-border-radius-elements: 5px;
+    --global-font2: 13px;
+    --global-hover-background: #0000001f;
+    --global-button-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.27);
+
+    --global-spacing-filter: 50px;
+    --global-spacing-description: 80px;
+}
+*{
+    transition: all 1000ms;
+    color: var(--global-font-color-elements)!important;
+}
